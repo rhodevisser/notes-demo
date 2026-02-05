@@ -12,6 +12,7 @@
               <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
               <a href="/" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium <?php echo ($_SERVER['REQUEST_URI'] === '/') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white'; ?>">Rhodé's Homepage</a>
               <a href="/about" class="rounded-md px-3 py-2 text-sm font-medium <?php echo ($_SERVER['REQUEST_URI'] === '/about') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white'; ?>">About moi</a>
+              <a href="/notes" class="rounded-md px-3 py-2 text-sm font-medium <?php echo ($_SERVER['REQUEST_URI'] === '/notes') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white'; ?>">Notes</a>
               <a href="/contact" class="rounded-md px-3 py-2 text-sm font-medium <?php echo ($_SERVER['REQUEST_URI'] === '/contact') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white'; ?>">Contact</a>
             </div>
           </div>
