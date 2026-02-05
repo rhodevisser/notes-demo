@@ -6,7 +6,6 @@ require 'router.php';
 
 
 
-$post = $db->query($query, [$id])->fetch();
 
 
 
