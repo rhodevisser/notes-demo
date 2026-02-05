@@ -9,13 +9,6 @@ $routes = [
     '/contact' =>  'controllers/contact.php',
 ];
 
-function abort($code = 404) {
-    http_response_code($code);
-
-    require "views/{$code}.php"; 
-
-    die();
-}
 
 function routeToController($uri, $routes) {
     if (array_key_exists($uri, $routes)) {
@@ -23,6 +16,14 @@ function routeToController($uri, $routes) {
     } else {
     abort(); 
     }
+}
+
+function abort($code = 404) {
+    http_response_code($code);
+
+    require "views/{$code}.php"; 
+
+    die();
 }
 
 routeToController($uri, $routes);
