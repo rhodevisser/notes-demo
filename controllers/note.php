@@ -17,7 +17,7 @@ if (! $note) {
 $currentUserId = 2;
 
 if ($note['user_id'] === $currentUserId) {
-    abort(403);
+    abort(Response::UNAUTHORIZED);
     }
     
 
