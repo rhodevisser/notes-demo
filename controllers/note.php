@@ -7,7 +7,7 @@ $heading = 'Note';
 
 $note = $db->query('select * from notes where id = :id', [
     'id' => $_GET['id']
-])->find();
+])->findOrFail();
 
 if (! $note) {
     abort();
