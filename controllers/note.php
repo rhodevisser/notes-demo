@@ -13,7 +13,10 @@ if (! $note) {
     abort();
 }
 
-if ($note['user_id'] === 2) {
+
+$currentUserId = 2;
+
+if ($note['user_id'] === $currentUserId) {
     abort(403);
     }
     
