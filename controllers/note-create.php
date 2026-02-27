@@ -1,7 +1,7 @@
 <?php
 
 $config = require('config.php');
-$db = new Database($config['database']); 
+$db = new Database($config['database']);
 
 $heading = 'Create Note';
 
