@@ -1,21 +1,28 @@
-<?php 
+<?php
 
-function dumbDie($value) {
-echo  "<pre>";
-var_dump($value);
-echo "</pre>";
+function dumbDie($value)
+{
+    echo  "<pre>";
+    var_dump($value);
+    echo "</pre>";
 
-die(); 
-
+    die();
 }
 
 
-function urlIs($value) {
-    return $_SERVER['REQUEST_URI'] === $value; 
+function urlIs($value)
+{
+    return $_SERVER['REQUEST_URI'] === $value;
 }
 
-function authorize($condition, $status = Response::UNAUTHORIZED){
-    if (! $condition){
+function authorize($condition, $status = Response::UNAUTHORIZED)
+{
+    if (! $condition) {
         abort($status);
     }
+}
+
+function base_path($path)
+{
+    return BASE_PATH . $path;
 }
